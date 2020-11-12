@@ -1,0 +1,9 @@
+# Sample config file for NS1 IP Updater
+
+NS1_ZONE="example.com"
+NS1_RECORD="foo.bar.example.com"
+NS1_RECORD_TYPE="A"
+NS1_API_KEY=
+CURRENT_IP=
+FORCE=false
+LOG_LEVEL="debug"
