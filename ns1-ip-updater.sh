@@ -130,7 +130,14 @@ function get_current_ip() {
         return 0
     fi
 
+    #TODO: Create config flag to choose between Google and OpenDNS WAN IP resolvers
+
+    # Find current public (WAN) IP address using Google
+    #CURRENT_IP="$(dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}')"
+
+    # Find current public (WAN) IP address using OpenDNS
     CURRENT_IP="$(dig +short myip.opendns.com @resolver1.opendns.com)"
+
     if [ $? -eq 0 ]; then
         log_info "Current WAN IP address: ${CURRENT_IP}"
     else
