@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#TODO: Check whether NS1_ZONE and NS1_RECORD match domain name RegEx
+#TODO: Validate input IP address with RegEx
+
 SCRIPT_NAME="$(basename $0)"
 
 NS1_ZONE=
