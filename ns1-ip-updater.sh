@@ -3,6 +3,7 @@
 #TODO: Check whether NS1_ZONE and NS1_RECORD match domain name RegEx
 #TODO: Validate input IP address with RegEx
 #TODO: Better error handling in update_ns1 function
+#TODO: Sanity check for prerequisites
 
 SCRIPT_NAME="$(basename $0)"
 
