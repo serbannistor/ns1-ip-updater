@@ -155,6 +155,7 @@ function update_ns1() {
         --data '{"answers":[{"answer":["'${CURRENT_IP}'"]}]}' \
         ${URL}
     if [ $? -eq 0 ]; then
+        echo "${CURRENT_IP}" > ${LAST_IP_FILE}
         log_info "Success!"
     else
         log_error "Could not update IP address"
