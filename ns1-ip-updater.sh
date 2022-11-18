@@ -147,7 +147,7 @@ function get_current_ip() {
 }
 
 function update_ns1() {
-    log_debug "Updating NS1 records"
+    log_warn "Updating NS1 records (${CURRENT_IP})"
     curl \
         --header "X-NSONE-Key: ${NS1_API_KEY}" \
         --header "Content-Type: application/json" \
